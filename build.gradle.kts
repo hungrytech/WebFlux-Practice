@@ -15,9 +15,6 @@ java.sourceCompatibility = JavaVersion.VERSION_17
 
 
 allprojects {
-
-
-
     repositories {
         mavenCentral()
     }
@@ -54,10 +51,6 @@ configure(subprojects.filter { it.name in reactorModules }) {
         implementation("org.jetbrains.kotlin:kotlin-reflect")
         implementation("org.jetbrains.kotlinx:kotlinx-coroutines-reactor")
         implementation("io.github.microutils:kotlin-logging-jvm:3.0.5")
-
-
-//        annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
-//        implementation("org.slf4j:slf4j-api:1.7.30")
 
         testImplementation("org.springframework.boot:spring-boot-starter-test")
         testImplementation("io.projectreactor:reactor-test")
