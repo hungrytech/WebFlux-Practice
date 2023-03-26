@@ -12,8 +12,6 @@ import org.springframework.transaction.ReactiveTransactionManager
 
 
 @Configuration
-//@EnableTransactionManagement
-//@EnableR2dbcRepositories
 class MariaDBConfig {
 
     @Bean
